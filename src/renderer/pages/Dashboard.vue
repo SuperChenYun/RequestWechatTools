@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
     <main>
-      
+
     </main>
   </div>
 </template>
