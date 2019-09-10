@@ -1,4 +1,4 @@
-# request_wechat_tool
+# request_wechat_tools
 
 > 微信接口调试工具
 

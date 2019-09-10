@@ -1,5 +1,5 @@
 {
-  "name": "request_wechat_tool",
+  "name": "request_wechat_tools",
   "version": "0.0.1",
   "author": "'itzcy' <itzcy@itzcy.com>",
   "description": "微信接口调试工具",
@@ -19,8 +19,8 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "request_wechat_tool",
-    "appId": "",
+    "productName": "RequestWechatTools",
+    "appId": "request_wechat_tools",
     "directories": {
       "output": "build"
     },
