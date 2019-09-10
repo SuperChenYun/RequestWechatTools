@@ -30,7 +30,6 @@ function createWindow () {
   })
 
   mainWindow.loadURL(winURL)
-  
   mainWindow.on('closed', () => {
     mainWindow = null
   })
@@ -53,23 +52,23 @@ app.on('activate', () => {
 // ipc通讯
 ipcMain.on('min-window', function () {
   mainWindow.minimize()
-});
+})
 
-ipcMain.on('max-window', e=> {
-    if (mainWindow.isMaximized()) {
-        mainWindow.unmaximize()
-    } else {
-        mainWindow.maximize()
-    }
-});
+ipcMain.on('max-window', function () {
+  if (mainWindow.isMaximized()) {
+    mainWindow.unmaximize()
+  } else {
+    mainWindow.maximize()
+  }
+})
 
 ipcMain.on('close-window', function () {
   app.quit()
-});
+})
 
 ipcMain.on('ipc-message', function () {
   app.quit()
-});
+})
 
 /**
  * Auto Updater
